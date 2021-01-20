@@ -384,7 +384,7 @@
                             <!-- Copyright Area -->
                             <div class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4">
                                 <!-- Copyright Left -->
-                                <div class="copyright-left">&copy; Copyright 2020 | All Rights Reserved by Teknologi Kreatif Indonesia.</div>
+                                <div class="copyright-left">&copy; Copyright 2021 | All Rights Reserved by Teknologi Kreatif Indonesia.</div>
                                 
                             </div>
                         </div>

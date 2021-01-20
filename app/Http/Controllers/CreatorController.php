@@ -28,17 +28,8 @@ class CreatorController extends Controller
 
         User::create($data);
 
-        // try {
-        //     $data=[
-        //         'email'=> $request->email            
-        //     ];
-    
-        //     User::create($data);
-        // } catch (Modelnot $exception) {
-
-        //     return back()->withError($exception->getMessage())->withInput();
-
-        // }
+        Session::flash('message', "Terimakasih email Kamu telah terdaftar, tunggu email balasan dari Kami ya!");
+        return redirect()->back();
         
         
     }

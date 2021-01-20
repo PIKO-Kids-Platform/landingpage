@@ -107,11 +107,11 @@
                                 <a href="#">
                                     <img src="assets/img/icon/google-play.png" alt="">
                                 </a>
-                                <a href="#">
+                                <!-- <a href="#">
                                     <img src="assets/img/icon/app-store.png" alt="">
-                                </a>
+                                </a> -->
                             </div>
-                            <span class="d-inline-block text-white fw-3 font-italic mt-3">* This is Minimum Viable Product Version</span>
+                            <span class="d-inline-block text-white fw-3 font-italic mt-3">*Minimum Viable Product Version</span>
                         </div>
                     </div>
                     <div class="col-12 col-md-5 col-lg-6">
@@ -301,8 +301,8 @@
                         <!-- Download Text -->
                         <div class="download-text text-center">
                             <h2 class="text-white">Hai Penulis dan Ilustrator, Ingin buku kalian Publish di PIKO?</h2>
-                            <p class="text-white my-3 d-none d-sm-block">Dapatkan uang untuk buku-buku kalian yang Publish di PIKO. Mari bersama-sama wujudkan mimpi kami meningkatkan literasi anak-anak di Indonesia.</p>
-                            <p class="text-white my-3 d-block d-sm-none">Dapatkan uang untuk buku-buku kalian yang Publish di PIKO. Mari bersama-sama wujudkan mimpi kami meningkatkan literasi anak-anak di Indonesia.</p>
+                            <p class="text-white my-3 d-none d-sm-block">Dapatkan komisi untuk buku-buku kalian yang Publish di PIKO. Mari bersama-sama wujudkan mimpi meningkatkan literasi anak-anak di Indonesia.</p>
+                            <p class="text-white my-3 d-block d-sm-none">Dapatkan komisi untuk buku-buku kalian yang Publish di PIKO. Mari bersama-sama wujudkan mimpi meningkatkan literasi anak-anak di Indonesia.</p>
                             <!-- Store Buttons -->
                             <div class="button-group store-buttons d-flex justify-content-center">
                                 <a href="#">
@@ -329,7 +329,7 @@
                                 <div class="form-group">
                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
                                 </div>
-                                <button type="submit" class="btn btn-lg btn-block">Sign Up</button>
+                                <button type="submit" class="btn btn-lg btn-block">Join Creator!</button>
                             </form>
                         </div>
                     </div>

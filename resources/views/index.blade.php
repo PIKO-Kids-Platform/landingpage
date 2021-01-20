@@ -353,7 +353,7 @@
                             <form class="subscribe-form" method="POST" action="{{ route('join') }}">
                                 @csrf
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="Enter your email">
+                                    <input required type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="Enter your email">
                                 </div>
                                 <button type="submit" class="btn btn-lg btn-block">Join Creator!</button>
                             </form>

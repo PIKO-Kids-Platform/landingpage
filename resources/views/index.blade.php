@@ -93,11 +93,40 @@
 
         <!-- ***** Welcome Area Start ***** -->
         <section id="home" class="section welcome-area bg-overlay overflow-hidden d-flex align-items-center">
+            
             <div class="container">
+
+                @if (Session::has('message'))                                    
+                    <div class="alert alert-info alert-dismissible fade show" role="alert">
+                        {{ Session::get('message') }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                @endif
+
+                @if ($errors->any())
+
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    
+                @endif
+
                 <div class="row align-items-center">
                     <!-- Welcome Intro Start -->
+                    
                     <div class="col-12 col-md-7 col-lg-6">
+                        
                         <div class="welcome-intro">
+                            
                             <h2 class="text-white">PIKO adalah perpustakaan digital untuk anak-anak berusia dibawah 12 tahun</h1>
                             <p class="text-white my-4">Menyediakan akses gratis kepada buku-buku
                             berkualitas yang akan menemani anak-anak
@@ -325,9 +354,10 @@
                             <!-- <h2>Join PIKO Creator</h2>
                             <p class="my-4">By subscribing you will get newsleter, promotions adipisicing elit. Architecto beatae, asperiores tempore repudiandae saepe aspernatur unde voluptate sapiente quia ex.</p> -->
                             <!-- Subscribe Form -->
-                            <form class="subscribe-form">
+                            <form class="subscribe-form" method="POST" action="{{ route('join') }}">
+                                @csrf
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="Enter your email">
                                 </div>
                                 <button type="submit" class="btn btn-lg btn-block">Join Creator!</button>
                             </form>

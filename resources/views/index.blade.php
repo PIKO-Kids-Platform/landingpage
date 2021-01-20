@@ -128,7 +128,7 @@
                         <div class="welcome-intro">
                             
                             <h2 class="text-white">PIKO adalah perpustakaan digital untuk anak-anak berusia dibawah 12 tahun</h1>
-                            <p class="text-white my-4">Menyediakan akses gratis kepada buku-buku
+                            <p class="text-white my-4">Menyediakan akses kepada buku-buku
                             berkualitas yang akan menemani anak-anak
                             Anda belajar dan bermain.</p>
                             <!-- Store Buttons -->

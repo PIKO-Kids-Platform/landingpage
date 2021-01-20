@@ -334,7 +334,7 @@
                             <p class="text-white my-3 d-block d-sm-none">Dapatkan komisi untuk buku-buku kalian yang Publish di PIKO. Mari bersama-sama wujudkan mimpi meningkatkan literasi anak-anak di Indonesia.</p>
                             <!-- Store Buttons -->
                             <div class="button-group store-buttons d-flex justify-content-center">
-                                <a href="{{ route('download') }}">
+                                <a href="{{ route('download.invitation') }}">
                                     <img src="assets/img/icon/google-play.png" alt="">
                                 </a>
                                 

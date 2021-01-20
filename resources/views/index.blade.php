@@ -334,12 +334,10 @@
                             <p class="text-white my-3 d-block d-sm-none">Dapatkan komisi untuk buku-buku kalian yang Publish di PIKO. Mari bersama-sama wujudkan mimpi meningkatkan literasi anak-anak di Indonesia.</p>
                             <!-- Store Buttons -->
                             <div class="button-group store-buttons d-flex justify-content-center">
-                                <a href="#">
+                                <a href="{{ route('download') }}">
                                     <img src="assets/img/icon/google-play.png" alt="">
                                 </a>
-                                <!-- <a href="#">
-                                    <img src="assets/img/icon/app-store.png" alt="">
-                                </a> -->
+                                
                             </div>
                             <span class="d-inline-block text-white fw-3 font-italic mt-3">* Download Invitation to Know More About PIKO Creator.</span>
                             
@@ -350,9 +348,7 @@
 
                     <div class="col-12 col-md-10 col-lg-7">
                     <span class="d-inline-block text-white fw-3 font-italic mt-3"></span>
-                        <div class="subscribe-content text-center">
-                            <!-- <h2>Join PIKO Creator</h2>
-                            <p class="my-4">By subscribing you will get newsleter, promotions adipisicing elit. Architecto beatae, asperiores tempore repudiandae saepe aspernatur unde voluptate sapiente quia ex.</p> -->
+                        <div class="subscribe-content text-center">                            
                             <!-- Subscribe Form -->
                             <form class="subscribe-form" method="POST" action="{{ route('join') }}">
                                 @csrf

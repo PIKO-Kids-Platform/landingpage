@@ -46,3 +46,17 @@ Route::get('/creator/list', 'CreatorController@list')->name('creator.list');
 
 //API
 Route::get('/creator/list/api', 'CreatorController@listApi')->name('creator.list.api');
+
+
+Route::get('/book/page/{id}', 'BookPageController@pagePathApi')->name('book.page.api');
+
+Route::get('test', function() {
+    Storage::disk('google')->put('test.txt', 'Hello World');
+});
+
+Route::get('test/load', function() {
+    return $contents = Storage::disk('google')->get('\Cover_0.png'); 
+    
+});
+
+

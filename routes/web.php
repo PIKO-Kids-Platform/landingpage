@@ -21,6 +21,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/blog/list', function () {
+    return view('blog-list');
+})->name('blog.list');
+
+Route::get('/blog/detail', function () {
+    return view('blog-detail');
+})->name('blog.detail');
+
 Route::post('/join', 'CreatorController@join')->name('join');
 
 Route::get('/download/invitation', function () {

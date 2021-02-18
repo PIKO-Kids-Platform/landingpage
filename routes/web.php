@@ -31,3 +31,10 @@ Route::get('/download/invitation', function () {
     return Response::download($file, "PIKO Content Creator Invitation - Early Adopters Program.pdf", $headers);
 
 })->name('download.invitation');
+
+
+Route::get('/creator/list', 'CreatorController@list')->name('creator.list');
+
+
+//API
+Route::get('/creator/list/api', 'CreatorController@listApi')->name('creator.list.api');

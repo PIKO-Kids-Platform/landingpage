@@ -14,8 +14,7 @@ class CreatorController extends Controller
     //
     public function join(Request $request)
     {
-     
-        
+             
         App::setLocale("bahasa");
         //check unique
         $validated = $request->validate([
@@ -33,4 +32,19 @@ class CreatorController extends Controller
         
         
     }
+
+    public function list()
+    {
+                     
+        $users = User::select('email','created_at')->get();                
+        return view('creator-list', compact('users'));        
+        
+    }
+
+    public function listApi()
+    {                     
+        return $users = User::select('email','created_at')->get();                                
+    }
+
+    
 }

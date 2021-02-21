@@ -90,6 +90,10 @@ section,
     margin: 0 auto;
 }
 
+.link{
+    color: #00AED1;
+}
+
 h1,
 h2,
 h3,
@@ -173,11 +177,16 @@ ul {
 ol li,
 ul li {
     list-style: none;
+    
 }
 
 img {
     height: auto;
     max-width: 100%;
+}
+
+.indent-point{
+    text-indent: 50px;
 }
 
 /* ******************************

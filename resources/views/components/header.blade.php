@@ -14,22 +14,9 @@
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav>
-                <ul class="navbar-nav" id="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#collections">Collections</a>
-                    </li>                            
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#screenshots">Screenshots</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#creator">Creator</a>
-                    </li>                            
-                </ul>
-            </nav>
+            
+            @yield('nav')
+            
         </div>
     </div>
 </header>

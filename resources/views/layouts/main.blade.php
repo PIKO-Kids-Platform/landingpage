@@ -34,7 +34,7 @@
 
     <div class="main">
         
-        @include('components.header')
+        
         
         @yield('content')
                

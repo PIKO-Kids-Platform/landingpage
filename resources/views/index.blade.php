@@ -2,10 +2,10 @@
 
 @extends('layouts.main')
 
+@include('components.index-nav')
+
 @section('content')
     
-
-
 <!-- ***** Welcome Area Start ***** -->
 <section id="home" class="section welcome-area bg-overlay overflow-hidden d-flex align-items-center">
     
@@ -47,9 +47,9 @@
                     berkualitas yang akan menemani anak-anak
                     Anda belajar dan bermain.</p>
                     <!-- Store Buttons -->
-                    <div class="button-group store-buttons d-flex">
-                        <a href="#">
-                            <img src="{{ asset('assets/img/icon/google-play.png')}}" alt="">
+                    <div class="button-group store-buttons d-flex">                        
+                        <a target="_blank" href="https://drive.google.com/file/d/1KOCCTan7vcJPSsRk6STa9bz47ItIOvzG/view?usp=sharing">
+                            <img src="https://haipiko.com/assets/img/icon/google-play.png" alt="">
                         </a>
                         <!-- <a href="#">
                             <img src="assets/img/icon/app-store.png" alt="">
@@ -252,9 +252,9 @@
             <div class="col-12 col-md-10 col-lg-8">
                 <!-- Download Text -->
                 <div class="download-text text-center">
-                    <h2 class="text-white">Hai Penulis dan Ilustrator, Ingin buku kalian Publish di PIKO?</h2>
-                    <p class="text-white my-3 d-none d-sm-block">Dapatkan komisi untuk buku-buku kalian yang Publish di PIKO. Mari bersama-sama wujudkan mimpi meningkatkan literasi anak-anak di Indonesia.</p>
-                    <p class="text-white my-3 d-block d-sm-none">Dapatkan komisi untuk buku-buku kalian yang Publish di PIKO. Mari bersama-sama wujudkan mimpi meningkatkan literasi anak-anak di Indonesia.</p>
+                    <h2 class="text-white">Hai Penulis dan Ilustrator, Ingin buku kalian masuk PIKO?</h2>
+                    <p class="text-white my-3 d-none d-sm-block">Mari bersama-sama wujudkan mimpi meningkatkan literasi anak-anak di Indonesia.</p>
+                    <p class="text-white my-3 d-block d-sm-none">Mari bersama-sama wujudkan mimpi meningkatkan literasi anak-anak di Indonesia.</p>
                     <!-- Store Buttons -->
                     <div class="button-group store-buttons d-flex justify-content-center">
                         <a href="{{ route('download.invitation') }}">
@@ -279,6 +279,7 @@
                             <input required type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="Enter your email">
                         </div>
                         <button type="submit" class="btn btn-lg btn-block">Join Creator!</button>
+                        <span class="d-inline-block text-white fw-3 font-italic mt-3">* Dengan bergabung pada PIKO Early Adopters Program, Saya menyetujui untuk menaati <a target="_blank" class="link" href="{{ route('tos') }}">Syarat dan Ketentuan</a> yang berlaku.</span>
                     </form>
                 </div>
             </div>

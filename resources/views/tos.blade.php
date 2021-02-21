@@ -1,6 +1,8 @@
 
 @extends('layouts.main')
 
+@include('components.tos-nav')
+
 @section('content')
 <!-- ***** Breadcrumb Area Start ***** -->
 <section class="section breadcrumb-area bg-overlay d-flex align-items-center">

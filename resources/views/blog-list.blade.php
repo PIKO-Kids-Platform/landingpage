@@ -33,7 +33,8 @@
                         <div class="single-blog">
                             <!-- Blog Thumb -->
                             <div class="blog-thumb">
-                                <a><img src="{{ asset('assets/img/blog/blog-4.jpg')}}" alt=""></a>
+                                <a><img src="{{ URL::to($article->img_url) }}" alt=""></a>
+                                                                
                             </div>
                             <!-- Blog Content -->
                             <div class="blog-content p-4">

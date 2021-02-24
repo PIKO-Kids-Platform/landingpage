@@ -257,7 +257,7 @@
                     <p class="text-white my-3 d-block d-sm-none">Mari bersama-sama wujudkan mimpi meningkatkan literasi anak-anak di Indonesia.</p>
                     <!-- Store Buttons -->
                     <div class="button-group store-buttons d-flex justify-content-center">
-                        <a href="{{ route('download.invitation') }}">
+                        <a target="_blank" href="https://drive.google.com/file/d/1OP7PupFaAfOCTPNTXLEg_owYm54A04SJ/view?usp=sharing">
                             <img src="{{ asset('assets/img/icon/downloadInvitation.png')}}" alt="">
                         </a>
                         
